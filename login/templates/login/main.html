@@ -1,0 +1,47 @@
+{% extends 'login/base.html' %}
+{% block body %}
+{% load staticfiles %}
+<body>
+
+    <!-- Navigation -->
+    {% include 'login/nav.html' %}
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Portfolio Item Row -->
+        <div class="row voffset6">
+
+            <div class="col-md-8">
+                <img class="img-responsive" src= "{%static 'login/Resources/Image/main.jpg'%}">
+            </div>
+
+            <div class="col-md-4">
+                <div class="row"><h2 class="page-header">Welcome {{username}}</h2></div>
+                <div class="row voffset3">
+                    <ul style="list-style-type:None">
+                        <li><h4><b><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> Lodge Complaint</b></h4></li>
+                        <p>Just enter the subject of your complain and register your complaint</p>
+                        <li><h4><b><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> Check Status</h4></b></li>
+                        <p>No need to walk through or call to know the progress status of your complaint</p>
+                        <li><h4><b><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> Give Feedback</h4></b></li>
+                        <p>Not Happy? oh wait! tell us why?</p>
+                        <li><h4><b><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> Reopen Complaint</b></h4></li>
+                        <p>Not satisfied? Just re-open!</p>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Singla&Shukla 2017</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+{% endblock %}
