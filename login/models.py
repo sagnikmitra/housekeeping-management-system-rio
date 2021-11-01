@@ -44,7 +44,7 @@ class Admin(User):
 
 class Complaint(models.Model):
     user = models.ForeignKey(User, related_name='+',
-                             null=True, on_delete=models.CASCADE)
+                             null=True, on_delete=models.DO_NOTHING)
     status = models.CharField(max_length=20, blank=False, default="New")
     subject = models.CharField(max_length=150, blank=False, validators=[
                                validateSubjectFeedback])
